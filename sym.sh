@@ -1,1 +1,1 @@
-rm ~/.zshrc && ln -s .zshrc ~/.zshrc
+rm ~/.zshrc && ln -s ~/configfiles/.zshrc ~/.zshrc
