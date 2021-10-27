@@ -106,7 +106,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias gitfs="git fetch; git status"
+alias gitfs="git fetch && git status"
+alias gitbib="cd ~/Documents/bib && git status && git commit -am 'refs' && git push"
 alias zshconfig="open ~/.zshrc -a 'Atom'"
 alias gitconfig="open ~/.gitconfig -a 'Atom'"
 alias dp="cd ~/Documents/projects"
