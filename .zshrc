@@ -122,6 +122,10 @@ alias gitlf="git rev-list --objects --all |
   sed -n 's/^blob //p' |
   sort --numeric-sort --key=2 |
   cut -c 1-12,41-"
+alias baserepos="echo '------- checking configfiles' &&
+	cd ~/configfiles && gitfs &&
+	echo '------- checking bib' && cd ~/Documents/bib && gitfs &&
+	cd"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
