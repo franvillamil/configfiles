@@ -126,6 +126,8 @@ alias baserepos="echo '------- checking configfiles' &&
 	cd ~/configfiles && gitfs &&
 	echo '------- checking bib' && cd ~/Documents/bib && gitfs &&
 	cd"
+alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
