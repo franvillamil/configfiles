@@ -130,6 +130,8 @@ alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 
 
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
