@@ -1,0 +1,66 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.text.tex.latex':
+  'Verbatim':
+    'prefix': 'verba'
+    'body': """
+      \\\\begin{verbatim2}
+      $1
+      \\\\end{verbatim2}
+      \\\\vspace{25pt}
+    """
+  'Minipage':
+    'prefix': 'minipage'
+    'body': """
+      \\\\begin{minipage}{$1\\\\textwidth}\\\\centering
+
+      \\\\end{minipage}\\\\hfill
+      \\\\begin{minipage}{$2\\\\textwidth}\\\\centering
+
+      \\\\end{minipage}
+    """
+  'Itemize':
+    'prefix': 'itemi'
+    'body': """
+      \\\\begin{itemize}
+        \\\\item $1
+      \\\\end{itemize}
+    """
+  'Graphics':
+    'prefix': 'gra'
+    'body': """
+      \\\\includegraphics[width = $1\\\\textwidth]{$2}
+    """
+  'Beamer frame':
+    'prefix': 'frame'
+    'body': """
+      % ----------------------------------------------------
+      \\\\begin{frame}
+      \\\\frametitle{$1}
+      \\\\centering
+
+      $2
+
+      \\\\end{frame}
+      % ----------------------------------------------------
+    """
