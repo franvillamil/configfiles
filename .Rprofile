@@ -1,5 +1,5 @@
 # Default options
-options(scipen=999)
+options(scipen = 999, stringsAsFactors = FALSE)
 
-# Shortcuts for function
+# Shortcuts for functions
 adf = function(x){as.data.frame(x)}
