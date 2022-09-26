@@ -128,7 +128,7 @@ alias baserepos="echo '------- checking configfiles' &&
 	cd"
 alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
-
+alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
