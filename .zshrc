@@ -129,7 +129,7 @@ alias baserepos="echo '------- checking configfiles' &&
 alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
-alias beamertmpl="curl -O https://github.com/franvillamil/templates/raw/master/beamer/beamer_preamble.tex &&
+alias setbeamer="curl -O https://github.com/franvillamil/templates/raw/master/beamer/beamer_preamble.tex &&
 	curl -O https://github.com/franvillamil/templates/raw/master/beamer/slides.tex"
 alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.fls *.synctex.gz'"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
