@@ -132,6 +132,8 @@ alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
 alias setbeamer="curl -O https://github.com/franvillamil/templates/raw/master/beamer/beamer_preamble.tex &&
 	curl -O https://github.com/franvillamil/templates/raw/master/beamer/slides.tex"
 alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.fls *.synctex.gz'"
+alias gitoverleaf='cleantex && git add . && git commit -m "update" && git push'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
