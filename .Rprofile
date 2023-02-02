@@ -9,3 +9,4 @@ options(repos=structure(c(CRAN="https://cloud.r-project.org/")))
 
 # Shortcuts for functions
 adf = function(x){as.data.frame(x)}
+who_am_i = print("I am Fran")
