@@ -9,3 +9,5 @@ options(repos=structure(c(CRAN="https://cloud.r-project.org/")))
 
 # Shortcuts for functions
 adf = function(x){as.data.frame(x)}
+adfhead = function(x){head(as.data.frame(x))}
+
