@@ -132,7 +132,7 @@ alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
 alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
 alias setbeamer="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/beamer_preamble.tex &&
 	curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/slides.tex"
-alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.fls *.synctex.gz'"
+alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.fls *.synctex.gz *.lof *.lot'"
 alias gitoverleaf='cleantex && git add . && git commit -m "update" && git push'
 
 
