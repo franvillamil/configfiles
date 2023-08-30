@@ -134,7 +134,7 @@ alias setbeamer="curl -O https://raw.githubusercontent.com/franvillamil/template
 	curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/slides.tex"
 alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.fls *.synctex.gz *.lof *.lot'"
 alias gitoverleaf='cleantex && git add . && git commit -m "update" && git push'
-
+alias teach="cd Google\ Drive/Teaching/general_materials/"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
