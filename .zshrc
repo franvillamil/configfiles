@@ -134,6 +134,7 @@ alias setbeamer="curl -O https://raw.githubusercontent.com/franvillamil/template
 	curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/slides.tex"
 alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm'"
 alias gitoverleaf='cleantex && git add . && git commit -m "update" && git push'
+alias gitacp='git add . && git commit -m "autoupdate" && git push'
 alias teach="cd ~/Documents/teaching_materials/"
 alias texdoc="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/latex/minimaldoc.tex"
 
