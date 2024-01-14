@@ -28,3 +28,4 @@ alias gitoverleaf='cleantex && git add . && git commit -m "update" && git push'
 alias gitacp='git add . && git commit -m "autoupdate" && git push'
 alias teach="cd ~/Documents/teaching_materials/"
 alias texdoc="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/latex/minimaldoc.tex"
+alias salt="ls -alt"
