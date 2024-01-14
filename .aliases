@@ -1,0 +1,30 @@
+alias gitfs="git fetch && git status"
+alias gitbib="cd ~/Documents/bib && git fetch && git status && git commit -am 'refs' && git push"
+alias updatebib="cd ~/Documents/bib && git fetch && git status && git pull"
+alias zshconfig="open ~/.zshrc -a 'Atom'"
+alias gitconfig="open ~/.gitconfig -a 'Atom'"
+alias dp="cd ~/Documents/projects"
+alias lnbib="ln -s /Users/franvillamil/Documents/bib/REF.bib REF.bib"
+alias cpbib="cp /Users/franvillamil/Documents/bib/REF.bib ."
+alias joinallpdf="'/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py' -o new.pdf *.pdf"
+# https://stackoverflow.com/a/42544963/2319134
+alias gitlf="git rev-list --objects --all |
+  git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' |
+  sed -n 's/^blob //p' |
+  sort --numeric-sort --key=2 |
+  cut -c 1-12,41-"
+alias baserepos="echo '------- checking configfiles' &&
+	cd ~/configfiles && gitfs &&
+	echo '------- checking bib' && cd ~/Documents/bib && gitfs &&
+	cd"
+alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
+alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
+alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
+alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
+alias setbeamer="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/beamer_preamble.tex &&
+	curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/slides.tex"
+alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm'"
+alias gitoverleaf='cleantex && git add . && git commit -m "update" && git push'
+alias gitacp='git add . && git commit -m "autoupdate" && git push'
+alias teach="cd ~/Documents/teaching_materials/"
+alias texdoc="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/latex/minimaldoc.tex"
