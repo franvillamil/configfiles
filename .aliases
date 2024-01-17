@@ -49,3 +49,4 @@ alias setbeamer="curl -O https://raw.githubusercontent.com/franvillamil/template
 	curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/slides.tex"
 alias texdoc="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/latex/minimaldoc.tex"
 alias texletter="curl -OOO https://raw.githubusercontent.com/franvillamil/templates/master/latex/{letter.tex,img/uc3m_logo.jpg,img/firma.png} && mkdir img && mv uc3m_logo.jpg firma.png img/"
+alias bstfiles="curl --remote-name-all https://raw.githubusercontent.com/franvillamil/templates/master/bibstyles/{jpr,rap,sageh}.bst && mkdir bst && mv *.bst bst/"
