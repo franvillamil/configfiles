@@ -31,7 +31,7 @@ alias cpbst="cp /Users/franvillamil/Documents/bib/jpr.bst ."
 # Go-To aliases and related
 alias dp="cd ~/Documents/projects"
 alias salt="ls -alt"
-alias openf="open ${PWD}"
+alias openf='open ${PWD} -a "Finder"'
 alias openfa='open ${PWD} -a "Atom"'
 alias openfs='open ${PWD} -a "Sublime Text"'
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
