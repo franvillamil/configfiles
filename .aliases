@@ -17,7 +17,8 @@ alias gitlf="git rev-list --objects --all |
 # Base configuration repos and syncing
 alias baserepos="echo '------- checking configfiles' &&
 	cd ~/configfiles && gitfs &&
-	echo '------- checking bib' && cd ~/Documents/bib && gitfs &&
+	echo '\n------- checking CV' && cd ~/Documents/CV && gitfs &&
+	echo '\n------- checking website' && cd ~/Documents/website && gitfs &&
 	cd"
 alias gitbib="cd ~/Documents/bib && git fetch && git status && git commit -am 'refs' && git push"
 alias updatebib="cd ~/Documents/bib && git fetch && git status && git pull"
