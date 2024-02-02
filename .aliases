@@ -3,7 +3,7 @@ alias zshconfig="open ~/.zshrc -a 'Sublime Text'"
 alias gitconfig="open ~/.gitconfig -a 'Sublime Text'"
 
 # Sublime Text
-alias stfolder="cd ~/Library/Application Support/Sublime Text/Packages/User"
+alias stfolder="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User"
 
 # Git and related
 alias gitoverleaf='cleantex && git add . && git commit -m "update" && git push'
