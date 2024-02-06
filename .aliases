@@ -4,6 +4,8 @@ alias gitconfig="open ~/.gitconfig -a 'Sublime Text'"
 
 # Sublime Text
 alias stfolder="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User"
+alias updatest="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User && gitfs && git pull"
+alias uploadst="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User && gitfs && gitacp"
 
 # Git and related
 alias gitoverleaf='cleantex && git add . && git commit -m "update" && git push'
