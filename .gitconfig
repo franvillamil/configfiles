@@ -29,3 +29,5 @@
     keepTemporaries = false
     trustExitCode = false
     prompt = false
+[pull]
+	rebase = false
