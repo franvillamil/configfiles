@@ -22,7 +22,7 @@ capitalize = function(str){
 }
 
 # Silent library loading (stackoverflow.com/a/76678272/2319134)
-slibrary = function (...) {
+silentlibrary = function (...) {
    packages = as.character(match.call(expand.dots = FALSE)[[2]])
    suppressWarnings(suppressMessages(lapply(packages, base::library, character.only = TRUE)))
    return(invisible())
