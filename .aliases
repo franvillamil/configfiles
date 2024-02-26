@@ -47,6 +47,7 @@ alias teach="cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/teaching_mater
 alias joinallpdf="'/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py' -o new.pdf *.pdf"
 alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
 alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
+alias doctopdf="sh ~/configfiles/func/pandoc_doc_to_pdf.sh"
 alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
 
 # Latex: misc and templates

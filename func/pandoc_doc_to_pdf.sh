@@ -1,0 +1,1 @@
+find ./ -iname '*.doc' -type f -exec sh -c 'pandoc "${0}" -o "${0%.doc}.pdf" -V geometry:margin=0.8in --pdf-engine=xelatex -V mainfont="Palatino" -V fontsize=12pt -V linestretch=1.2 && rm "${0}"' {} \;
