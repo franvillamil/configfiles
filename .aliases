@@ -48,7 +48,7 @@ alias joinallpdf="'/System/Library/Automator/Combine PDF Pages.action/Contents/R
 alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
 alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
 alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
-alias pandoc_tex_to_word='f() { pandoc $1 --citeproc --bibliography $2 --resource-path ./paper -o $3 };f'
+alias pandoc_tex_to_docx='f() { pandoc $1 --citeproc --bibliography $2 --resource-path ./paper -o $3 };f'
 
 # Latex: misc and templates
 alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm'"
