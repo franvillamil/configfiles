@@ -31,8 +31,8 @@ alias updatebib="cd ~/Documents/bib && git fetch && git status && git pull"
 
 # BibDesk
 alias lnbib="ln -s /Users/franvillamil/Documents/bib/REF.bib REF.bib"
-alias cpbib="cp /Users/franvillamil/Documents/bib/REF.bib ."
-alias cpbst="cp /Users/franvillamil/Documents/bib/jpr.bst ."
+alias cpbib="cp /Users/franvillamil/Dropbox/REF.bib ."
+alias cpbst="cp /Users/franvillamil/Documents/templates/bibstyles/jpr.bst ."
 
 # Go-To aliases and related
 alias dp="cd ~/Documents/projects"
