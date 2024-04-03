@@ -41,7 +41,7 @@ alias openf='open ${PWD} -a "Finder"'
 alias openfa='open ${PWD} -a "Atom"'
 alias openfs='open ${PWD} -a "Sublime Text"'
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
-alias teach="cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/teaching_materials/"
+alias teach="cd ~/Documents/course_materials/"
 
 # Misc actions with documents
 alias joinallpdf="'/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py' -o new.pdf *.pdf"
