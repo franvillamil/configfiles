@@ -20,11 +20,11 @@ alias gitlf="git rev-list --objects --all |
   cut -c 1-12,41-"
 
 # Base configuration repos and syncing
-alias baserepos="echo '------- checking configfiles' &&
+alias baserepos="echo '--------------------- checking configfiles' &&
 	cd ~/configfiles && gitfs &&
-	echo '\n------- checking CV' && cd ~/Documents/CV && gitfs &&
-	echo '\n------- checking website' && cd ~/Documents/website && gitfs &&
-	echo '\n------- checking ST settings' && stfolder && gitfs &&
+	echo '\n--------------------- checking CV' && cd ~/Documents/CV && gitfs &&
+	echo '\n--------------------- checking website' && cd ~/Documents/website && gitfs &&
+	echo '\n--------------------- checking ST settings' && stfolder && gitfs &&
 	cd"
 alias gitbib="cd ~/Documents/bib && git fetch && git status && git commit -am 'refs' && git push"
 alias updatebib="cd ~/Documents/bib && git fetch && git status && git pull"
