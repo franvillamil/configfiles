@@ -8,7 +8,7 @@ alias updatest="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User &&
 alias uploadst="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User && gitfs && gitacp"
 
 # Git and related
-alias gitoverleaf='cleantex && rm main.pdf appendix.pdf && git add . && git commit -m "update" && git push'
+alias gitoverleaf='cleantex && rm -vf main.pdf appendix.pdf && git add . && git commit -m "update" && git push'
 alias gitacp='git add . && git commit -m "autoupdate" && git push'
 alias gitfs="git fetch && git status"
 ## Listing blob objects in repo, from large to small
