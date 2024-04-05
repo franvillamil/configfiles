@@ -13,6 +13,9 @@ options(repos=structure(c(CRAN="https://cloud.r-project.org/")))
 # as.data.frame
 adf = function(x){as.data.frame(x)}
 
+# Look into df names
+innames = function(df, str){names(df)[grepl(str, names(df))]}
+
 # Capitalize words
 capitalize = function(str){
   c = strsplit(str, " ")
