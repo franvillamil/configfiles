@@ -8,7 +8,7 @@ alias updatest="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User &&
 alias uploadst="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User && gitfs && gitacp"
 
 # Git and related
-alias gitoverleaf='cleantex && git add . && git commit -m "update" && git push'
+alias gitoverleaf='cleantex && rm main.pdf appendix.pdf && git add . && git commit -m "update" && git push'
 alias gitacp='git add . && git commit -m "autoupdate" && git push'
 alias gitfs="git fetch && git status"
 ## Listing blob objects in repo, from large to small
@@ -51,7 +51,7 @@ alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
 alias pandoc_tex_to_docx='f() { pandoc $1 --citeproc --bibliography $2 --resource-path ./paper -o $3 };f'
 
 # Latex: misc and templates
-alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm'"
+alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.thm *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm'"
 alias setbeamer="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/beamer_preamble.tex &&
 	curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/slides.tex"
 alias texdoc="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/latex/minimaldoc.tex"
