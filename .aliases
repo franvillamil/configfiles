@@ -43,6 +43,9 @@ alias openfs='open ${PWD} -a "Sublime Text"'
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias teach="cd ~/Documents/course_materials/"
 
+# fzf
+alias fzfst='open $(fzf --preview="cat {}") -a "Sublime Text"'
+
 # Misc actions with documents
 alias joinallpdf="pdftk *.pdf output output.pdf"
 alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
