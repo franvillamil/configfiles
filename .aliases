@@ -1,13 +1,24 @@
-# Main configuration
+## -------------------------------------------------------
+## Main configuration
 alias zshconfig="open ~/.zshrc -a 'Sublime Text'"
 alias gitconfig="open ~/.gitconfig -a 'Sublime Text'"
+alias baserepos="echo '--------------------- checking configfiles' &&
+	cd ~/configfiles && gitfs &&
+	echo '\n--------------------- checking CV' && cd ~/Documents/CV && gitfs &&
+	echo '\n--------------------- checking website' && cd ~/Documents/website && gitfs &&
+	echo '\n--------------------- checking ST settings' && stfolder && gitfs &&
+	cd"
 
-# Sublime Text
+## -------------------------------------------------------
+## Sublime Text
+
 alias stfolder="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User"
 alias updatest="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User && gitfs && git pull"
 alias uploadst="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User && gitfs && gitacp"
 
-# Git and related
+## -------------------------------------------------------
+## Git and related
+
 alias gitoverleaf='cleantex && rm -vf main.pdf appendix.pdf && git add . && git commit -m "update" && git push'
 alias gitacp='git add . && git commit -m "autoupdate" && git push'
 alias gitfs="git fetch && git status"
@@ -19,45 +30,40 @@ alias gitlf="git rev-list --objects --all |
   sort --numeric-sort --key=2 |
   cut -c 1-12,41-"
 
-# Base configuration repos and syncing
-alias baserepos="echo '--------------------- checking configfiles' &&
-	cd ~/configfiles && gitfs &&
-	echo '\n--------------------- checking CV' && cd ~/Documents/CV && gitfs &&
-	echo '\n--------------------- checking website' && cd ~/Documents/website && gitfs &&
-	echo '\n--------------------- checking ST settings' && stfolder && gitfs &&
-	cd"
-alias gitbib="cd ~/Documents/bib && git fetch && git status && git commit -am 'refs' && git push"
-alias updatebib="cd ~/Documents/bib && git fetch && git status && git pull"
+## -------------------------------------------------------
+## Go-to / open shortcuts
 
-# BibDesk
-alias lnbib="ln -s /Users/franvillamil/Documents/bib/REF.bib REF.bib"
-alias cpbib="cp /Users/franvillamil/Dropbox/REF.bib ."
-alias cpbst="cp /Users/franvillamil/Documents/templates/bibstyles/jpr.bst ."
-
-# Go-To aliases and related
 alias dp="cd ~/Documents/projects"
 alias salt="ls -alt"
 alias openf='open ${PWD} -a "Finder"'
-alias openfa='open ${PWD} -a "Atom"'
 alias openfs='open ${PWD} -a "Sublime Text"'
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
+alias goicloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias teach="cd ~/Documents/course_materials/"
 
-# fzf
-alias fzfst='open $(fzf -m --preview="cat {}") -a "Sublime Text"'
+## -------------------------------------------------------
+## Bash shortcuts
 
+# fzf with preview and open in ST
+alias fzfst='open $(fzf -m --preview="cat {}") -a "Sublime Text"'
+# Quit Global Protect (VPN)
+alias quitglobalprotect='launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*'
 # Misc actions with documents
 alias joinallpdf="pdftk *.pdf output output.pdf"
 alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
 alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
 alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
 alias pandoc_tex_to_docx='f() { pandoc $1 --citeproc --bibliography $2 --resource-path ./paper -o $3 };f'
-alias findinfolder='f() { grep -Rni "." -e $1 };f'
-alias pdftojpg='f() { convert -density 300 $1.pdf -quality 100 $1.jpg };f'
 alias compresspdf='f() { gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf $1 };f'
+# Images and others
+alias pdftojpg='f() { convert -density 300 $1.pdf -quality 100 $1.jpg };f'
+alias gpxtokml='f() { gpsbabel -i gpx -f $1 -o kml,points=0 -F $1.kml };f'
 
-# Latex: misc and templates
+## -------------------------------------------------------
+## Latex: misc and templates
+
+alias cpbib="cp /Users/franvillamil/Dropbox/REF.bib ."
 alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.thm *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm'"
 alias setbeamer="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/beamer_preamble.tex &&
 	curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/slides.tex"
@@ -65,4 +71,3 @@ alias setminitex="curl -O https://raw.githubusercontent.com/franvillamil/templat
 alias settex="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/latex/main.tex"
 alias settexletter="curl -OOO https://raw.githubusercontent.com/franvillamil/templates/master/latex/{letter.tex,img/uc3m_logo.jpg,img/firma.png} && mkdir img && mv uc3m_logo.jpg firma.png img/"
 alias bstfiles="curl --remote-name-all https://raw.githubusercontent.com/franvillamil/templates/master/bibstyles/{jpr,rap,sageh}.bst && mkdir bst && mv *.bst bst/"
-alias gpxtokml='f() { gpsbabel -i gpx -f $1 -o kml,points=0 -F $1.kml };f'
