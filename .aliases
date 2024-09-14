@@ -36,10 +36,11 @@ alias gitlf="git rev-list --objects --all |
 alias dp="cd ~/Documents/projects"
 alias salt="ls -alt"
 alias openf='open ${PWD} -a "Finder"'
-alias openfs='open ${PWD} -a "Sublime Text"'
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias goicloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias teach="cd ~/Documents/course_materials/"
+alias openfs='open ${PWD} -a "Sublime Text"'
+alias subl='open -a "Sublime Text" "$@"'
 
 ## -------------------------------------------------------
 ## Bash shortcuts
