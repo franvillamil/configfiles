@@ -84,3 +84,15 @@ source $ZSH/oh-my-zsh.sh
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude ".git" . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude ".git" . "$1"
+}
