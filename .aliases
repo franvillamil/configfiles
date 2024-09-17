@@ -50,7 +50,7 @@ alias salt='ls -alt'
 ## Bash shortcuts
 
 # fzf with preview and open in ST
-alias fzfst='open $(fzf -m --preview="cat {}") -a "Sublime Text"'
+alias fzfst='open $(fzf -m --preview="bat {}") -a "Sublime Text"'
 # Quit Global Protect (VPN)
 alias quitglobalprotect='launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*'
 # Misc actions with documents
