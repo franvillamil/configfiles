@@ -43,14 +43,14 @@ alias subl='open -a "Sublime Text" "$@"'
 
 alias ls='lsd'
 alias l='ls -l'
-alias lt='ls --tree'
+alias lt='ls --tree --depth 3'
 alias salt='ls -alt'
 
 ## -------------------------------------------------------
 ## Bash shortcuts
 
 # fzf with preview and open in ST
-alias fzfst='open $(fzf -m --preview="bat {}") -a "Sublime Text"'
+alias fzfst='open $(fzf -m --preview="bat --color=always {}") -a "Sublime Text"'
 # Quit Global Protect (VPN)
 alias quitglobalprotect='launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*'
 # Misc actions with documents
