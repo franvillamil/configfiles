@@ -40,6 +40,7 @@ alias goicloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias teach="cd ~/Documents/course_materials/"
 alias openfs='open ${PWD} -a "Sublime Text"'
 alias subl='open -a "Sublime Text" "$@"'
+alias zotl='open ~/Library/Mobile Documents/com~apple~CloudDocs/zotero_library'
 
 alias ls='lsd'
 alias l='ls -l'
