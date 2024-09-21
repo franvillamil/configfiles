@@ -16,6 +16,7 @@ alias stfolder="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User"
 alias updatest="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User && gitfs && git pull"
 alias uploadst="cd ~/Library/Application\ Support/Sublime\ Text/Packages/User && gitfs && gitacp"
 alias subl='open -a "Sublime Text" "$@"'
+alias openfs='open ${PWD} -a "Sublime Text"'
 
 ## -------------------------------------------------------
 ## Git and related
@@ -39,7 +40,6 @@ alias openf='open ${PWD} -a "Finder"'
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias goicloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias teach="cd ~/Documents/course_materials/"
-alias openfs='open ${PWD} -a "Sublime Text"'
 alias zotl='open ~/Library/Mobile\ Documents/com~apple~CloudDocs/zotero_library'
 
 alias ls='lsd'
