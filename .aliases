@@ -40,17 +40,19 @@ alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias goicloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias teach="cd ~/Documents/course_materials/"
 alias openfs='open ${PWD} -a "Sublime Text"'
+alias zotl='open ~/Library/Mobile\ Documents/com~apple~CloudDocs/zotero_library'
 
 alias ls='lsd'
 alias l='ls -l'
-alias lt='ls --tree'
+alias lt='ls --tree --depth 3'
 alias salt='ls -alt'
 
 ## -------------------------------------------------------
 ## Bash shortcuts
 
-# fzf with preview and open in ST
-alias fzfst='open $(fzf -m --preview="bat {}") -a "Sublime Text"'
+# fzf with bat preview, also option opening in ST
+alias fzfp='fzf -m --preview="bat --color=always {}"'
+alias fzfst='open $(fzf -m --preview="bat --color=always {}") -a "Sublime Text"'
 # Quit Global Protect (VPN)
 alias quitglobalprotect='launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*'
 # Misc actions with documents
