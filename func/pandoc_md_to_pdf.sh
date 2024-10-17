@@ -1,1 +1,1 @@
-find ./ -iname '*.md' -maxdepth 1 -type f -exec sh -c 'pandoc "${0}" -o "${0%.md}.pdf" --pdf-engine=xelatex -V mainfont="Palatino" -V geometry:margin=0.75in -V fontsize=12pt -V urlcolor=cyan -V linestretch=1.1' {} \;
+find ./ -iname '*.md' -maxdepth 1 -type f -exec sh -c 'pandoc "${0}" -o "${0%.md}.pdf" --bibliography /Users/franvillamil/Dropbox/REF.bib --pdf-engine=xelatex -V mainfont="Palatino" -V geometry:margin=0.75in -V fontsize=12pt -V urlcolor=cyan -V linestretch=1.1' {} \;
