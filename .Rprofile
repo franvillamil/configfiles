@@ -18,7 +18,7 @@ innames = function(df, str){names(df)[grepl(str, names(df))]}
 
 # Capitalize words
 capitalize = function(str){
-  c = strsplit(str, " ")
+  c = strsplit(tolower(str), " ")
   cu = lapply(c, function(x)
     paste(toupper(substring(x, 1,1)), substring(x, 2), sep="", collapse=" "))
   return(unlist(cu))
