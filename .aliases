@@ -53,16 +53,20 @@ alias salt='ls -alt'
 # fzf with bat preview, also option opening in ST
 alias fzfp='fzf -m --preview="bat --color=always {}"'
 alias fzfst='open $(fzf -m --preview="bat --color=always {}") -a "Sublime Text"'
+
 # Quit Global Protect (VPN)
 alias quitglobalprotect='launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*'
+
 # Misc actions with documents
 alias joinallpdf="pdftk *.pdf output output.pdf"
 alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
 alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
 alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
-alias pandoc_tex_to_docx='f() { pandoc $1 --citeproc --bibliography $2 --resource-path ./paper -o $3 };f'
+alias textodocx='f() { pandoc $1 --citeproc --bibliography $2 --resource-path ./paper -o $3 };f'
+alias mdtodocx='f() { pandoc "${1}" -o "${1%.md}.docx" --citeproc --bibliography /Users/franvillamil/Dropbox/REF.bib };f'
 alias compresspdf='f() { gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf $1 };f'
+
 # Images and others
 alias pdftojpg='f() { convert -density 300 $1.pdf -quality 100 $1.jpg };f'
 alias gpxtokml='f() { gpsbabel -i gpx -f $1 -o kml,points=0 -F $1.kml };f'
