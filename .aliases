@@ -62,6 +62,7 @@ alias joinallpdf="pdftk *.pdf output output.pdf"
 alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
 alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
 alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
+alias mdtopdf_times='f() { pandoc "${1}" -o "${1%.md}.pdf" --citeproc --bibliography /Users/franvillamil/Dropbox/REF.bib --pdf-engine=xelatex -V mainfont="Times New Roman" -V geometry:margin=1in -V fontsize=12pt -V urlcolor=cyan -V linestretch=1.2 };f'
 alias textodocx='f() { pandoc $1 --citeproc --bibliography $2 --resource-path ./paper -o $3 };f'
 alias mdtodocx='f() { pandoc "${1}" -o "${1%.md}.docx" --citeproc --bibliography /Users/franvillamil/Dropbox/REF.bib };f'
 alias compresspdf='f() { gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
