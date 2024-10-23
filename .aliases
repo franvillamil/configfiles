@@ -65,6 +65,7 @@ alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
 alias mdtopdf_times='f() { pandoc "${1}" -o "${1%.md}.pdf" --citeproc --bibliography /Users/franvillamil/Dropbox/REF.bib --pdf-engine=xelatex -V mainfont="Times New Roman" -V geometry:margin=1in -V fontsize=12pt -V urlcolor=cyan -V linestretch=1.2 };f'
 alias textodocx='f() { pandoc $1 --citeproc --bibliography $2 --resource-path ./paper -o $3 };f'
 alias mdtodocx='f() { pandoc "${1}" -o "${1%.md}.docx" --citeproc --bibliography /Users/franvillamil/Dropbox/REF.bib };f'
+alias mdtotxt='f() { pandoc -f markdown -t plain "${1}" -o "${1%.md}.txt" --citeproc --bibliography /Users/franvillamil/Dropbox/REF.bib };f'
 alias compresspdf='f() { gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf $1 };f'
 
