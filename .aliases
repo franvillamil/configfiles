@@ -45,7 +45,7 @@ alias zotl='open ~/Library/Mobile\ Documents/com~apple~CloudDocs/zotero_library'
 alias ls='lsd'
 alias l='ls -l'
 alias lt='ls --tree --depth 3'
-alias salt='ls -alt'
+alias la='ls -alt'
 
 ## -------------------------------------------------------
 ## Bash shortcuts
