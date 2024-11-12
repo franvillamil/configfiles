@@ -1,5 +1,5 @@
 ## -------------------------------------------------------
-## Main configuration
+## Main configuration and others
 
 alias zshconfig="open ~/.zshrc -a 'Sublime Text'"
 alias gitconfig="open ~/.gitconfig -a 'Sublime Text'"
@@ -8,10 +8,9 @@ alias baserepos="echo '--------------------- checking configfiles' &&
 	echo '\n--------------------- checking CV' && cd ~/Documents/CV && gitfs &&
 	echo '\n--------------------- checking website' && cd ~/Documents/website && gitfs &&
 	echo '\n--------------------- checking ST settings' && stfolder && gitfs &&
-	echo '\n--------------------- running funds updater' &&
-	cd ~/Dropbox/Important/investing && 
-	Rscript --no-save --verbose finect.R 2>&1 | tee out.Rout &&
+	echo '\n--------------------- running funds updater' && updateinvest &&
 	cd"
+alias updateinvest="cd ~/Dropbox/Important/investing && Rscript --no-save --verbose finect.R 2>&1 | tee out.Rout"
 
 ## -------------------------------------------------------
 ## Sublime Text
