@@ -8,9 +8,10 @@ alias baserepos="echo '--------------------- checking configfiles' &&
 	echo '\n--------------------- checking CV' && cd ~/Documents/CV && gitfs &&
 	echo '\n--------------------- checking website' && cd ~/Documents/website && gitfs &&
 	echo '\n--------------------- checking ST settings' && stfolder && gitfs &&
-	echo '\n--------------------- running funds updater' && updateinvest &&
 	cd"
-alias updateinvest="cd ~/Dropbox/Important/investing && Rscript --no-save --verbose finect.R 2>&1 | tee out.Rout"
+alias invest="cd ~/Dropbox/Important/investing/scrap &&
+	gitfs && git pull &&
+	cd .. && Rscript --no-save --verbose plots.R && open plots"
 
 ## -------------------------------------------------------
 ## Sublime Text
