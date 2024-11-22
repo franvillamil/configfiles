@@ -11,7 +11,8 @@ alias baserepos="echo '--------------------- checking configfiles' &&
 	cd"
 alias invest="cd ~/Dropbox/Important/investing/scrap &&
 	gitfs && git pull &&
-	cd .. && Rscript --no-save --verbose plots.R && open plots"
+	cd .. && Rscript --no-save --verbose stocks.R &&
+	Rscript --no-save --verbose plots.R && open plots"
 
 ## -------------------------------------------------------
 ## Sublime Text
