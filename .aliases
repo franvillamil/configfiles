@@ -46,6 +46,7 @@ alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias goicloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias teach="cd ~/Documents/course_materials/"
 alias zotl='open ~/Library/Mobile\ Documents/com~apple~CloudDocs/zotero_library'
+alias obsid='cd Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
 
 alias ls='lsd'
 alias l='ls -l'
