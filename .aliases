@@ -36,6 +36,7 @@ alias gitlf="git rev-list --objects --all |
   sed -n 's/^blob //p' |
   sort --numeric-sort --key=2 |
   cut -c 1-12,41-"
+alias setignore="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/.gitignore"
 
 ## -------------------------------------------------------
 ## Go-to / open shortcuts
