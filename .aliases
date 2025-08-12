@@ -47,14 +47,14 @@ alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias goicloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias teach="cd ~/Documents/course_materials/"
 alias zotl='open ~/Library/Mobile\ Documents/com~apple~CloudDocs/zotero_library'
-alias obsid='cd Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
-alias obsidian='cd Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
+alias obsid='cd ~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
+alias obsidian='cd ~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
 alias tfg='subl ~/Dropbox/Academic/Gestion'
 
 alias ls='lsd'
-alias l='ls -l'
+alias l='ls -alt'
 alias lt='ls --tree --depth 3'
-alias la='ls -alt'
+alias la='ls -lt'
 
 ## -------------------------------------------------------
 ## Bash shortcuts
