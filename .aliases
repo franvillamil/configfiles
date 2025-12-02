@@ -50,6 +50,7 @@ alias zotl='open ~/Library/Mobile\ Documents/com~apple~CloudDocs/zotero_library'
 alias obsid='cd ~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
 alias obsidian='cd ~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
 alias tfg='subl ~/Dropbox/Academic/Gestion'
+alias openwebui='DATA_DIR=~/.open-webui uvx --python 3.11 open-webui@latest serve'
 
 alias ls='lsd'
 alias l='ls -alt'
