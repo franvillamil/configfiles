@@ -95,4 +95,6 @@ _fzf_compgen_path() {
 # Use fd to generate the list for directory completion
 _fzf_compgen_dir() {
   fd --type d --hidden --follow --exclude ".git" . "$1"
-}
+}export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
