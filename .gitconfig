@@ -31,3 +31,5 @@
     prompt = false
 [pull]
 	rebase = false
+[http]
+	postBuffer = 157286400
