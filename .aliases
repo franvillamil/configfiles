@@ -5,7 +5,7 @@ alias zshconfig="open ~/.zshrc -a 'Sublime Text'"
 alias gitconfig="open ~/.gitconfig -a 'Sublime Text'"
 alias baserepos="echo '--------------------- checking configfiles' &&
 	cd ~/configfiles && gitfs &&
-	echo '\n--------------------- checking CV' && cd ~/Documents/CV && gitfs &&
+	echo '\n--------------------- checking templates' && cd ~/Documents/templates && gitfs &&
 	echo '\n--------------------- checking website' && cd ~/Documents/website && gitfs &&
 	echo '\n--------------------- checking ST settings' && stfolder && gitfs &&
 	cd"
