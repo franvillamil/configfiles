@@ -53,9 +53,9 @@ alias tfg='subl ~/Dropbox/Academic/Gestion'
 alias openwebui='DATA_DIR=~/.open-webui uvx --python 3.11 open-webui@latest serve'
 
 alias ls='lsd'
-alias l='ls -alt'
-alias lt='ls --tree --depth 3'
-alias la='ls -lt'
+alias l='lsd -alt --date=relative --size=short'
+alias lt='lsd --tree --depth 3'
+alias size='du -s -h * | sort -h'
 
 ## -------------------------------------------------------
 ## Bash shortcuts
