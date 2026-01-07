@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+# ln -s ~/functions/splitpdfat.py ~/bin/splitpdfat
+# chmod +x ~/functions/splitpdfat.py
+
 """
 Splits an input pdf file into several given a list of splitting
 points (page numbers).
