@@ -1,3 +1,5 @@
+alias splitpdfat="python ~/configfiles/func/splitpdf.py"
+
 ## -------------------------------------------------------
 ## Main configuration and others
 
