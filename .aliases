@@ -53,9 +53,9 @@ alias tfg='subl ~/Dropbox/Academic/Gestion'
 alias openwebui='DATA_DIR=~/.open-webui uvx --python 3.11 open-webui@latest serve'
 
 alias ls='lsd'
-alias l='ls -alt'
-alias lt='ls --tree --depth 3'
-alias la='ls -lt'
+alias l='lsd -alt --date=relative --size=short'
+alias lt='lsd --tree --depth 3'
+alias size='du -s -h * | sort -h'
 
 ## -------------------------------------------------------
 ## Bash shortcuts
@@ -69,7 +69,7 @@ alias quitglobalprotect='launchctl unload /Library/LaunchAgents/com.paloaltonetw
 
 # Misc actions with documents
 alias joinallpdf="pdftk *.pdf output output.pdf"
-alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
+#alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
 alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
 alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
 alias mdtopdf_times='f() { pandoc "${1}" -o "${1%.md}.pdf" --citeproc --bibliography /Users/franvillamil/Dropbox/REF.bib --pdf-engine=xelatex -V mainfont="Times New Roman" -V geometry:margin=1in -V fontsize=12pt -V urlcolor=cyan -V linestretch=1.2 };f'
