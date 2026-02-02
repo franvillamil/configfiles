@@ -87,9 +87,11 @@ alias gpxtokml='f() { gpsbabel -i gpx -f $1 -o kml,points=0 -F $1.kml };f'
 ## -------------------------------------------------------
 ## Latex: misc and templates
 
-alias cpbib="cp /Users/franvillamil/Dropbox/REF.bib ."
 alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.thm *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm'"
-alias cleantex2="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.thm *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm *.aux'"
+alias cleantexfull="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.thm *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm *.aux'"
+alias cleantexslides="sh -c 'rm -rvf slides/*/*.toc slides/*/*.log slides/*/*.out slides/*/*.bbl slides/*/*.blg slides/*/*.fdb_latexmk slides/*/*.thm slides/*/*.fls slides/*/*.synctex.gz slides/*/*.lof slides/*/*.lot slides/*/*.bcf slides/*/*.nav slides/*/*.run.xml slides/*/*.snm slides/*/*.aux'"
+
+alias cpbib="cp /Users/franvillamil/Dropbox/REF.bib ."
 alias setbeamer="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/beamer_preamble.tex &&
 	curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/slides.tex"
 alias setminitex="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/latex/minimaldoc.tex"
