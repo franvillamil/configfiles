@@ -89,6 +89,7 @@ alias gpxtokml='f() { gpsbabel -i gpx -f $1 -o kml,points=0 -F $1.kml };f'
 
 alias cpbib="cp /Users/franvillamil/Dropbox/REF.bib ."
 alias cleantex="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.thm *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm'"
+alias cleantex2="sh -c 'rm -rvf *.toc *.log *.out *.bbl *.blg *.fdb_latexmk *.thm *.fls *.synctex.gz *.lof *.lot *.bcf *.nav *.run.xml *.snm *.aux'"
 alias setbeamer="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/beamer_preamble.tex &&
 	curl -O https://raw.githubusercontent.com/franvillamil/templates/master/beamer/slides.tex"
 alias setminitex="curl -O https://raw.githubusercontent.com/franvillamil/templates/master/latex/minimaldoc.tex"
