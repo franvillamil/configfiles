@@ -13,6 +13,7 @@ alias invest="cd ~/Dropbox/Important/investing/scrap &&
 	gitfs && git pull &&
 	cd .. && Rscript --no-save --verbose stocks.R &&
 	Rscript --no-save --verbose plots.R && open plots"
+alias teachrepos="cd ~/Documents/course_materials && sh checkall.sh"
 
 ## -------------------------------------------------------
 ## Sublime Text
