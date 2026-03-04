@@ -19,7 +19,12 @@ for dir in */ ; do
       if [ -z "$REMOTE" ]; then
         echo "No upstream configured, skipping pull"
       elif [ "$LOCAL" = "$REMOTE" ]; then
-        echo "Already up to date"
+        if ! git diff --quiet || ! git diff --cached --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
+          echo "No remote changes, but you have uncommitted local changes:"
+          git status --short
+        else
+          echo "Already up to date"
+        fi
       elif [ "$LOCAL" = "$BASE" ]; then
         echo "Behind upstream..."
         if ! git diff --quiet || ! git diff --cached --quiet; then
