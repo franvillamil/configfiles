@@ -7,6 +7,7 @@ alias baserepos="echo '--------------------- checking configfiles' &&
 	cd ~/configfiles && gitfs &&
 	echo '\n--------------------- checking templates' && cd ~/Documents/templates && gitfs &&
 	echo '\n--------------------- checking website' && cd ~/Documents/website && gitfs &&
+	echo '\n--------------------- checking claude docs' && cd ~/claudedocs && gitfs &&
 	echo '\n--------------------- checking ST settings' && stfolder && gitfs &&
 	cd"
 alias invest="cd ~/Dropbox/Important/investing/scrap &&
