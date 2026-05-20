@@ -3,17 +3,11 @@
 
 alias zshconfig="open ~/.zshrc -a 'Sublime Text'"
 alias gitconfig="open ~/.gitconfig -a 'Sublime Text'"
-alias baserepos="echo '--------------------- checking configfiles' &&
-	cd ~/configfiles && gitfs &&
-	echo '\n--------------------- checking templates' && cd ~/Documents/templates && gitfs &&
-	echo '\n--------------------- checking website' && cd ~/Documents/website && gitfs &&
-	echo '\n--------------------- checking claude docs' && cd ~/claudedocs && gitfs &&
-	echo '\n--------------------- checking ST settings' && stfolder && gitfs &&
-	cd"
 alias invest="cd ~/Dropbox/Important/investing/scrap &&
 	gitfs && git pull &&
 	cd .. && Rscript --no-save --verbose stocks.R &&
 	Rscript --no-save --verbose plots.R && open plots"
+alias baserepos="cd && sh ~/configfiles/func/gitfsbaserepos.sh"
 alias teachrepos="cd ~/Documents/course_materials && sh ~/configfiles/func/gitfsteaching.sh"
 alias projrepos="cd ~/Documents/projects && sh ~/configfiles/func/gitfsprojects.sh"
 
@@ -73,7 +67,7 @@ alias quitglobalprotect='launchctl unload /Library/LaunchAgents/com.paloaltonetw
 # Misc actions with documents
 alias joinallpdf="pdftk *.pdf output output.pdf"
 #alias splitpdfat='f() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=$1 -dLastPage=$2 -sOUTPUTFILE=output.pdf $3 };f'
-alias docxtopdf="sh ~/configfiles/func/pandoc_docx_to_pdf.sh"
+alias docxtopdf="sh ~/configfiles/func/soffice_docx_to_pdf.sh"
 alias mdtopdf="sh ~/configfiles/func/pandoc_md_to_pdf.sh"
 alias mdtopdf_times='f() { pandoc "${1}" -o "${1%.md}.pdf" --citeproc --bibliography /Users/franvillamil/Dropbox/REF.bib --pdf-engine=xelatex -V mainfont="Times New Roman" -V geometry:margin=1in -V fontsize=12pt -V urlcolor=cyan -V linestretch=1.2 };f'
 source ~/configfiles/func/mypandoc.sh
