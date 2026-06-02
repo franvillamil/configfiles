@@ -8,8 +8,6 @@ Splits an input pdf file into several given a list of splitting
 points (page numbers).
 """
 
-__author__ = 'benhdj@cs.cmu.edu (Benjamin Han)'
-
 import sys
 import os
 from pypdf import PdfReader, PdfWriter
