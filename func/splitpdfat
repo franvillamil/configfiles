@@ -1,4 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+# /// script
+# dependencies = ["pypdf"]
+# ///
 
 # ln -s ~/functions/splitpdfat.py ~/bin/splitpdfat
 # chmod +x ~/functions/splitpdfat.py
@@ -7,8 +10,6 @@
 Splits an input pdf file into several given a list of splitting
 points (page numbers).
 """
-
-__author__ = 'benhdj@cs.cmu.edu (Benjamin Han)'
 
 import sys
 import os
