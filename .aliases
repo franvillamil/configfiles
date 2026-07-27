@@ -43,6 +43,7 @@ alias openf='open ${PWD} -a "Finder"'
 alias icloud='open ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias goicloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias teach="cd ~/Documents/course_materials/"
+alias zotlgo='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/zotero_library'
 alias zotl='open ~/Library/Mobile\ Documents/com~apple~CloudDocs/zotero_library'
 alias obsid='cd ~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
 alias obsidian='cd ~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
