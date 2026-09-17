@@ -5,7 +5,7 @@ alias zshconfig="open ~/.zshrc -a 'Sublime Text'"
 alias gitconfig="open ~/.gitconfig -a 'Sublime Text'"
 alias invest="cd ~/Dropbox/Important/investing/scrap &&
 	gitfs && git pull &&
-	cd .. && Rscript --no-save --verbose stocks.R &&
+	cd .. &&
 	Rscript --no-save --verbose plots.R && open plots"
 alias baserepos="cd && sh ~/configfiles/func/gitfsbaserepos.sh"
 alias teachrepos="cd ~/Documents/course_materials && sh ~/configfiles/func/gitfsteaching.sh"
